@@ -11,7 +11,7 @@
   <div class="col-xs-12 col-sm-12 col-md-4 well well-sm col-md-offset-4"> 
    <legend><i class="glyphicon glyphicon-globe"></i> Đăng ký thành viên!
    </legend> 
-   <form action="" method="POST" class="form" role="form"> 
+   <form action="../controller/dangkyController.php" method="POST" class="form" role="form"> 
      <input class="form-control" name="txt_name" placeholder="Họ tên" required="" type="text" required="required"> 
      <input class="form-control" name="txt_email" placeholder="Email" type="email" required="required"> 
      <input class="form-control" name="txt_account" placeholder="Tên đăng nhập" type="text" required="required">
