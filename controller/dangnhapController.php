@@ -25,7 +25,7 @@ function getUserByEmail($email){
 
     if (count($_POST) > 0) {
         $username = $_POST["txt_username"];
-        $passwd = ($_POST["txt_password"]);
+        $passwd = md5($_POST["txt_password"]);
         $user=getUserByEmail($username);
         if($username == $user['email'] && $passwd == $user['password']) {
            
@@ -34,7 +34,13 @@ function getUserByEmail($email){
            
            header("Location: ../view/index.php");
            
-        }   
+        }else{
+            echo'<script>
+            window.alert("Email hoặc mật khẩu không tồn tại! Đăng nhập thất bại");
+            window.history.back();
+            </script>';
+            die();
+        }
     }
 ?>
 
