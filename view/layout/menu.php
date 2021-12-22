@@ -78,7 +78,7 @@
                       if(isset($_SESSION["txt_username"]))
                       {
                         echo '<li class="nav-item"><a class="nav-link" href="#" >Welcome '.$_SESSION["txt_username"].'</a></li>';
-                        echo '<li class="nav-item"><a class="nav-link" href="#" class="dropdown-item">Đăng Xuất</a></li>';
+                        echo '<li class="nav-item"><a class="nav-link" href="../controller/logoutController.php" class="dropdown-item">Đăng Xuất</a></li>';
                       }
                       else
                       {
